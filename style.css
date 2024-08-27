@@ -1,0 +1,44 @@
+@font-face {
+	font-family: fixed-font;
+	src: url(AzeretMono-VariableFont_wght.ttf);
+}
+body {
+	background-color: black;
+	color: white;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+#container {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	height: 100vh;
+}
+#container div {
+	font-family: fixed-font;
+	font-size: 28vw;
+}
+#colon {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 28vw;
+	padding-bottom: 5vh
+}
+input {
+	background-color: #000;
+	border: none;
+	box-sizing: border-box;
+	color: white;
+	font-family: fixed-font;
+	font-size: 28vw;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	width: 38vw;
+}
+.white {
+	color: white;
+}
+.red {
+	color: #f33;
+}
