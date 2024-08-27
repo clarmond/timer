@@ -19,6 +19,11 @@ const dec = () => {
 	const ssString = ss.toString().padStart(2, '0');
 	$('#mm').val(mmString);
 	$('#ss').val(ssString);
+	if (mm === 0 && ss <= 30) {
+		$('.num').removeClass('white').addClass('red');
+	} else {
+		$('.num').removeClass('red').addClass('white');
+	}
 }
 
 const stopClock = () => {
@@ -36,4 +41,4 @@ const toggleClock = () => {
 
 $('.num').on('focus', stopClock);
 
-$(window).on('dblclick', toggleClock);
+$('#toggle-button').on('click', toggleClock);

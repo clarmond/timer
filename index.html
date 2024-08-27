@@ -9,9 +9,12 @@
 </head>
 <body>
 	<div id="container">
-		<input id="mm" type="tel" value="02" class="num white" style="text-align: right">
-		<span id="colon">:</span>
-		<input id="ss" type="tel" value="00" class="num white" style="text-align: right">
+		<input id="mm" type="number" value="02" class="num white" style="text-align: right">
+		<span id="colon" class="num white">:</span>
+		<input id="ss" type="number" value="00" class="num white" style="text-align: right">
+	</div>
+	<div style="position: fixed; bottom: 2px; text-align: center; width: 100%">
+		<button id="toggle-button" style="background-color: #222; border: none;">Start/Stop</button>
 	</div>
 	<script src="jquery-3.7.1.min.js"></script>
 	<script src="index.js"></script>
